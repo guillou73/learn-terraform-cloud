@@ -1,13 +1,13 @@
 terraform {
-
   cloud {
     organization = "PetkleenLimited"
 
     workspaces {
-      name = "terraform-cloud-ec2"
+      name = "learn-terraform-cloud-cli"
     }
   }
-
+}
+terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -15,5 +15,6 @@ terraform {
     }
   }
 
-  required_version = "~>1.11.2"
+  required_version = "~> 1.11.2"
 }
+
